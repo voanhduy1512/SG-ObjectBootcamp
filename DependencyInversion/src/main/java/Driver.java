@@ -1,6 +1,11 @@
 public class Driver {
-    Radio radio = new Radio();
-    Car car = new Car();
+    private Car car;
+    private Radio radio;
+
+    public Driver(Car car, Radio radio) {
+        this.car = car;
+        this.radio = radio;
+    }
 
     public void listenToRadio(){
         radio.turnOn();
