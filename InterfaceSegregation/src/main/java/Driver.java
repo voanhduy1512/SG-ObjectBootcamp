@@ -1,7 +1,7 @@
-public class Driver {
-    private Tank tank;
+public class Driver implements Alarmable {
+    private Drivable tank;
 
-    public Driver(Tank tank) {
+    public Driver(Drivable tank) {
 
         this.tank = tank;
     }
@@ -35,6 +35,7 @@ public class Driver {
         tank.decreaseRightSpeed();
     }
 
+    @Override
     public void raiseAlarm() {
         tank.raiseAlarm();
     }

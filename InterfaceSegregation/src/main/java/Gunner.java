@@ -1,7 +1,7 @@
 public class Gunner {
-    private Tank tank;
+    private Firable tank;
 
-    public Gunner(Tank tank) {
+    public Gunner(Firable tank) {
 
         this.tank = tank;
     }
